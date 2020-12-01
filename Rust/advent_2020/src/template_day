@@ -1,0 +1,37 @@
+use crate::problem::Problem;
+
+fn transform(input: String) -> Vec<i32> {
+    return input
+    .split("\n")
+    .filter(|i| !i.is_empty())
+    .map(|i| i.parse::<i32>().unwrap())
+    .collect();
+}
+
+pub struct DayX();
+
+impl Problem for DayX {
+    fn year(&self) -> u32 { 2020 }
+    fn day(&self) -> u32 { DAY }
+
+    fn example_first(&self) -> &str
+    {
+""
+    }
+
+    fn solve_first(&self, input: String) -> String {
+        let data = transform(input);
+
+        return 0.to_string();
+    }
+
+    fn example_second(&self) -> &str { 
+        return self.example_first();
+     }
+
+    fn solve_second(&self, input: String) -> String{
+        let data = transform(input);
+
+        return 0.to_string();
+    }
+}
