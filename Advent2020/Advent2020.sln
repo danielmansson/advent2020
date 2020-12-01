@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Advent2020.Tests", "Advent2020.Tests\Advent2020.Tests.csproj", "{CDBB9059-091C-478E-B292-A10EA162FAE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Advent2020", "Advent2020\Advent2020.csproj", "{4E9DE4DD-7671-434B-9A08-67C86C9850CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CDBB9059-091C-478E-B292-A10EA162FAE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDBB9059-091C-478E-B292-A10EA162FAE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDBB9059-091C-478E-B292-A10EA162FAE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDBB9059-091C-478E-B292-A10EA162FAE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E9DE4DD-7671-434B-9A08-67C86C9850CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E9DE4DD-7671-434B-9A08-67C86C9850CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E9DE4DD-7671-434B-9A08-67C86C9850CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E9DE4DD-7671-434B-9A08-67C86C9850CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
