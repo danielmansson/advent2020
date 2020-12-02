@@ -3,10 +3,11 @@ mod problem;
 use crate::problem::Problem;
 
 mod day1;
+mod day2;
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     
-    let problem = day1::Day1();
+    let problem = day2::Day2();
 
     println!();
     let input = util::fetch_input(problem.year(), problem.day());
