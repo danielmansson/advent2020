@@ -68,7 +68,6 @@ namespace Advent2020.Util
 				}
 
 				Console.WriteLine();
-				Console.ReadKey();
 			}
 			catch (Exception e)
 			{
