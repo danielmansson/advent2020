@@ -27,31 +27,18 @@ BBFFBBFRLL";
                 .Select(l => new Input()
                 {
                     row = l.Substring(0, l.Length - 3)
-                        .Replace("F", "L")
-                        .Replace("B", "R"),
+                        .Replace("F", "0")
+                        .Replace("B", "1"),
                     column = l.Substring(l.Length - 3)
+                        .Replace("L", "0")
+                        .Replace("R", "1")
                 })
                 .ToList();
         }
-
-        int Bsp(string input)
+        
+        int FromBinary(string input)
         {
-            int range = 1 << input.Length;
-            int low = 0;
-            int high = range - 1;
-            int d = range / 2;
-
-            foreach (var c in input)
-            {
-                if (c == 'L')
-                    high -= d;
-                else
-                    low += d;
-
-                d /= 2;
-            }
-
-            return low;
+            return Convert.ToInt32(input, 2);
         }
 
         public override object Solve1(string raw)
@@ -63,8 +50,9 @@ BBFFBBFRLL";
 
         int Seat(Input i)
         {
-            var row = Bsp(i.row);
-            var column = Bsp(i.column);
+            var row = FromBinary(i.row);
+            var column = FromBinary(i.column);
+            
             return row * 8 + column;
         }
 
@@ -73,8 +61,8 @@ BBFFBBFRLL";
             var input = Transform(raw);
             var takenSeats = input.Select(Seat).ToList();
 
-            var s = input.Min(i => Bsp(i.row));
-            var e = input.Min(i => Bsp(i.row));
+            var s = input.Min(i => FromBinary(i.row));
+            var e = input.Min(i => FromBinary(i.row));
             
             for (int r = 1; r <= 126; r++)
             {
